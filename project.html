@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <header>     
+        
+        <h1 id="aaa">veti</h1>
+        <nav class="bbb">            
+            <a href="#contact">Contact</a>
+            <a href="#apropos">A propos nous</a>
+            <a href="dom.html">panier</a>           
+        </nav>       
+    </header>
+    <section>
+
+        <fieldset id="contact">
+            <form class="flex">
+         <div class="ouii">
+           <label class="label-grand" for="votre-nom">
+             nom et prenom</label> <br>
+           <input id="votre-nom-et-prenom" name="votre-nom-et-prenom" type="text">
+            <br>
+           <label for="phone">téléphone:</label> <br>
+
+           <input type="tel" id="phone" name="phone"
+            pattern="[0-9]-{2}[0-9]{3}-[0-9]{3}" 
+            required>  <br>
+          
+            
+              <label for="emailAddress">Votre adresse email</label><br>
+              <input id="emailAddress" type="email" size="64" maxLength="64" required
+                     placeholder="nomutilisateur@gmail.com" pattern=".+@gmail.com">                   
+            
+         </div>
+           
+            <div class="Box">
+              <label for="message">Requête</label><br>
+              <textarea id="message" cols="80" rows="8" required
+                        placeholder="Mes chaussures sont trop petites."></textarea>
+                        <input type="submit" value="Envoyer la requête" id="sub">
+            </div>
+           
+           </form>
+        </fieldset>
+           <h2>Merci pour votre confiance</h2>
+        
+        
+    </section>
+        
+    <section class="apro" id="apropos">
+        
+            <div class="owner">
+              <img src="firas.jpg" alt="" id="fir">
+              <h1 class="nome">Firass</h1>
+              <p class="nume"> num tel: 92436962 <br> email: firaschouichi12@gmail.com</p>
+            </div>
+            <div class="loca">
+                <h1 id="lo">localistaion<img src="loc.jpg" alt="" id="loca"></h1>
+                <img src="kai.jpg" alt="fir">
+
+
+            </div>
+
+      
+    </section>
+    <section class="op" >
+        <p>aimez vous notre page ?</p>
+
+        <div>
+          <input type="radio" id="oui" name="yyy" value="oui">
+          <label for="oui">oui</label>
+        </div>
+
+        <div>
+          <input type="radio" id="non" name="yyy" value="non">
+          <label for="non">non</label>
+        </div>
+    </section>
+    <hr>
+    <footer>copyrights | mentions legales |cookies</footer>
+
+    <script src="dom.js"></script>  
+
+</body>
+</html>
